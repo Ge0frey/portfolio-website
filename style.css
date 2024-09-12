@@ -225,27 +225,26 @@ nav {
 
 /* SKILLS SECTION */
 #skills {
-  padding: 6vh 10vw;
-  text-align: center;
-}
-
-.article-container {
-  display: flex;
-  flex-wrap: wrap; /* Allows articles to wrap */
-  justify-content: center; /* Center the articles */
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-article {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 300px; /* Consistent sizing */
-  text-align: center;
-}
+    padding: 6vh 10vw;
+    text-align: center;
+  }
+  
+  .article-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  article {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    text-align: center;
+  }
 
 /* PROJECTS SECTION */
 #projects {
