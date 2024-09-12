@@ -227,25 +227,87 @@ nav {
 #skills {
     padding: 6vh 10vw;
     text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .section__text__p1 {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-details-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .about-containers {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .details-container {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .experience-sub-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
   }
   
   .article-container {
     display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    margin-top: 2rem;
     flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
   }
   
   article {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 25%;
-    text-align: center;
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: calc(50% - 0.5rem);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
   }
-
+  
+  article:hover {
+    transform: translateY(-5px);
+  }
+  
+article .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  article h3 {
+    font-size: 1rem;
+    color: #495057;
+    margin: 0;
+  }
+  
+  article p {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin: 0.25rem 0 0 0;
+  }
+  
+  .arrow {
+    display: block;
+    margin: 2rem auto 0;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+  }
 /* PROJECTS SECTION */
 #projects {
   padding: 6vh 10vw;
