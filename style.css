@@ -8,13 +8,22 @@
 }
 
 body {
+  max-width: 80%;
+  margin: 0 auto;
   font-family: "Poppins", sans-serif;
   background-color: #f9f9f9;
   color: #333;
 }
 
+#desktop-nav {
+  position: fixed;
+  width: 80%;
+  border-radius: 5PX;
+}
+
 html {
   scroll-behavior: smooth;
+  background-color: #f4f4f4;
 }
 
 h1, h2, h3 {
@@ -53,7 +62,7 @@ nav {
   color: #555;
 }
 
-.hamburger-menu {
+#hamburger-nav {
   display: none;
 }
 
@@ -163,7 +172,9 @@ nav {
 
 #socials-container {
   display: flex;
+  justify-content: center;
   gap: 1rem;
+  margin-top: 100px;
 }
 
 .icon {
@@ -277,6 +288,11 @@ nav {
     display: flex;
     align-items: center;
     transition: transform 0.3s ease;
+  }
+
+  .article-text {
+    display: flex;
+    flex-wrap: wrap;
   }
   
   article:hover {
