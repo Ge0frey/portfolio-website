@@ -368,8 +368,9 @@ article .icon {
   margin-bottom: 1rem;
 }
 
-.contact-info-container p {
+.contact-info-container p a {
   font-size: 1.25rem;
+  color: black;
 }
 
 .contact-icon {
