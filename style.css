@@ -107,6 +107,7 @@ nav {
   min-height: 90vh;
   text-align: center;
   background-color: #f4f4f4;
+  padding: 0 5vw; /* Added padding for consistency */
 }
 
 .section__text__p1 {
@@ -177,12 +178,15 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #f4f4f4;
 }
 
 .section-container {
   display: flex;
   gap: 2rem;
   margin-top: 3rem;
+  flex-wrap: wrap; /* Allows elements to wrap */
+  justify-content: center; /* Center content */
 }
 
 .about-details-container {
@@ -198,11 +202,14 @@ nav {
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex: 1;
+  max-width: 400px; /* Consistent sizing */
+  margin: 0 auto; /* Center the containers */
 }
 
 .about-containers {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap; /* Allows containers to wrap */
 }
 
 .text-container p {
@@ -224,10 +231,10 @@ nav {
 
 .article-container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap; /* Allows articles to wrap */
+  justify-content: center; /* Center the articles */
   gap: 2rem;
   margin-top: 2rem;
-  flex-wrap: wrap;
 }
 
 article {
@@ -235,7 +242,8 @@ article {
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 25%;
+  width: 100%;
+  max-width: 300px; /* Consistent sizing */
   text-align: center;
 }
 
@@ -247,8 +255,10 @@ article {
 
 .project-img {
   width: 100%;
+  max-width: 400px; /* Adjusted max-width for better sizing */
   height: auto;
   border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box-shadow for a modern look */
 }
 
 .color-container {
@@ -257,21 +267,17 @@ article {
   border-radius: 1rem;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem; /* Added margin for spacing */
+  flex: 1;
+  max-width: 400px; /* Consistent sizing */
 }
 
-.project-btn {
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  font-weight: 500;
-  cursor: pointer;
-  border: 1px solid grey;
-  background-color: white;
-}
-
-.project-btn:hover {
-  background-color: #333;
-  color: white;
+.experience-details-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows projects to wrap onto multiple lines */
+  justify-content: center; /* Centers the projects */
+  gap: 2rem; /* Provides spacing between projects */
+  margin-top: 2rem;
 }
 
 /* CONTACT SECTION */
