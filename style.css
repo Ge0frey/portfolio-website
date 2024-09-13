@@ -403,16 +403,4 @@ footer p {
   color: #555;
 }
 
-footer .nav-links {
-  margin-bottom: 1rem;
-}
 
-footer .nav-links li a {
-  font-weight: 500;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-footer .nav-links li a:hover {
-  color: grey;
-}

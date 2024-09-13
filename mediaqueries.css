@@ -118,6 +118,14 @@
     .project-img {
       width: 100%;
     }
+
+    .contact-information {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      margin-top: 20px;
+      padding: 20px;
+    }
   
     .contact-info-container {
       flex-direction: column;
@@ -132,16 +140,7 @@
       height: 50px;
       width: 50px;
     }
-  
-    footer .nav-links {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-  
-    footer .nav-links li a {
-      font-size: 1rem;
-    }
+
   }
   
   /* Very small devices (phones, 320px and up) */
