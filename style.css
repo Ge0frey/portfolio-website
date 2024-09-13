@@ -96,6 +96,11 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
+.hamburger-icon.open {
+  width: 20px;
+  height: 20px;
+}
+
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -287,6 +292,7 @@ nav {
 
   .article-text {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
   
@@ -359,6 +365,14 @@ article .icon {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.contact-information {
+  border: 2px solid rgb(127, 124, 124);
+  display: flex;
+  margin-top: 20px;
+  border-radius: 25px;
+  padding: 20px;
 }
 
 .contact-info-container {
