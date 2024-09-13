@@ -141,6 +141,31 @@
       width: 50px;
     }
 
+    /* Interests Section */
+  .interest-item {
+    width: calc(50% - 2rem);
+  }
+
+  /* Skills Roadmap Section */
+  .roadmap-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .roadmap-container::before {
+    display: none;
+  }
+
+  .roadmap-item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* Blog Posts Section */
+  .blog-post {
+    width: 100%;
+  }
+
   }
   
   /* Very small devices (phones, 320px and up) */
@@ -159,6 +184,13 @@
   
     .section__text__p2 {
       font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    /* Interests Section */
+    .interest-item {
+      width: 100%;
     }
   }
   

@@ -30,7 +30,7 @@ function isElementPartiallyInViewport(el) {
 }
 
 function animateSections() {
-  const sections = document.querySelectorAll('#profile .section__text__p1, #profile .title, #profile .section__text__p2, #profile .btn-container, #socials-container, #about .section-container, #skills .details-container, #projects .color-container');
+  const sections = document.querySelectorAll('#profile .section__text__p1, #profile .title, #profile .section__text__p2, #profile .btn-container, #socials-container, #about .section-container, #skills .details-container, #projects .color-container, #interests .interest-item, #skills-roadmap .roadmap-item, #blog-posts .blog-post');
   
   sections.forEach(section => {
     if (isElementPartiallyInViewport(section)) {
