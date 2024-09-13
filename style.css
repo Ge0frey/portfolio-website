@@ -450,3 +450,148 @@ footer {
 footer p {
   font-size: 1.1rem;
 }
+
+/* Keyframes */
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Element-specific animations */
+
+/* Logo animation */
+.logo {
+  animation: rotateIn 0.8s ease-out;
+}
+
+/* Navigation links animation */
+.nav-links li {
+  opacity: 0;
+  animation: fadeInRight 0.5s ease-out forwards;
+}
+.nav-links li:nth-child(1) { animation-delay: 0.1s; }
+.nav-links li:nth-child(2) { animation-delay: 0.2s; }
+.nav-links li:nth-child(3) { animation-delay: 0.3s; }
+.nav-links li:nth-child(4) { animation-delay: 0.4s; }
+
+/* Profile section animations */
+#profile .section__text__p1,
+#profile .title,
+#profile .section__text__p2,
+#profile .btn-container,
+#socials-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#profile .section__text__p1.animate { transition-delay: 0s; }
+#profile .title.animate { transition-delay: 0.2s; }
+#profile .section__text__p2.animate { transition-delay: 0.4s; }
+#profile .btn-container.animate { transition-delay: 0.6s; }
+#socials-container.animate { transition-delay: 0.8s; }
+
+#profile .section__text__p1.animate,
+#profile .title.animate,
+#profile .section__text__p2.animate,
+#profile .btn-container.animate,
+#socials-container.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* About section animations */
+#about .section-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#about .section-container.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Skills section animations */
+#skills .details-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#skills .details-container.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Projects section animations */
+#projects .color-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#projects .color-container.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Contact section animation */
+#contact .contact-info-container {
+  animation: bounce 2s infinite;
+  animation-delay: 1s;
+}
+
+/* Arrow animation */
+.arrow {
+  animation: bounce 2s infinite;
+}
