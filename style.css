@@ -19,7 +19,7 @@
 }
 
 body {
-  /* max-width: 80%; */
+  max-width: 95%;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
@@ -46,7 +46,7 @@ nav {
   background-color: var(--background-color);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
-  width: 100%;
+  width: 95%;
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -448,7 +448,7 @@ article p {
 
 /* SKILLS ROADMAP SECTION */
 #skills-roadmap {
-  background-color: var(--secondary-color);
+  background-color: var(--light-gray);
   padding: 6rem 10vw;
   text-align: center;
 }
