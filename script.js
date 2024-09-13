@@ -26,16 +26,6 @@ function isElementInViewport(el) {
 }
 
 function animateSections() {
-  const sections = document.querySelectorAll('#about .section-container, #skills .details-container, #projects .color-container');
-  
-  sections.forEach(section => {
-    if (isElementInViewport(section)) {
-      section.classList.add('animate');
-    }
-  });
-}
-
-function animateSections() {
   const sections = document.querySelectorAll('#profile .section__text__p1, #profile .title, #profile .section__text__p2, #profile .btn-container, #socials-container, #about .section-container, #skills .details-container, #projects .color-container');
   
   sections.forEach(section => {
