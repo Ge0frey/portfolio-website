@@ -2,6 +2,11 @@
 
 /* General mobile styles */
 @media (max-width: 768px) {
+
+  .title {
+    font-size: 2.5rem;
+  }
+
     .nav-links {
       display: none;
     }
@@ -12,13 +17,11 @@
 
     body {
       max-width: 100%;
-      /* margin: 0 auto; */
-      font-family: "Poppins", sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
     }
-  
+
+    
     #hamburger-nav {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -28,7 +31,6 @@
     }
   
     .hamburger-menu {
-      max-width: 100%;
       display: flex;
       flex-direction: column;
     }
@@ -41,8 +43,6 @@
       line-height: 25px;
       overflow: hidden;
       transition: max-height 0.3s ease-in-out;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      background-color: #f4f4f4;
     }
 
     .menu-links li {
