@@ -37,6 +37,6 @@ function animateSections() {
   });
 }
 
-// Make sure to call animateSections on load and scroll
+// Make sure to call animateSections on load and scroll (done)
 window.addEventListener('load', animateSections);
 window.addEventListener('scroll', animateSections);
