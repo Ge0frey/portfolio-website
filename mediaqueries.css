@@ -36,9 +36,9 @@
     .menu-links {
       position: absolute;
       top: 10vh;
-      width: 15%; 
-      right: 10px;     
+      width: 100%; 
       max-height: 0;
+      line-height: 25px;
       overflow: hidden;
       transition: max-height 0.3s ease-in-out;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
